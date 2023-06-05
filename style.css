@@ -1,0 +1,19 @@
+header{
+    background-color:  #404040;
+    padding: 18px;
+    font-size: 20px;
+}
+
+main{
+    background-color:  #FFFFFF;
+}
+
+.letras{
+    color: #202020;
+}
+
+button{
+    background-color: #F2F56A;
+    border-radius: 5px;
+    border-color: #F2F56A;
+}
