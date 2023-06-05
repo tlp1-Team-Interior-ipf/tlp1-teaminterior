@@ -10,10 +10,27 @@ main{
 
 .letras{
     color: #202020;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
     background-color: #F2F56A;
     border-radius: 5px;
     border-color: #F2F56A;
+}
+
+#formulario{
+    width: 60%;
+}
+
+.form-floating{
+    margin-bottom: 2%;
+}
+
+.btn{
+    background-color:  #404040;
+    width: 40%;
 }

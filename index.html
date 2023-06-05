@@ -29,9 +29,25 @@
         <div>
           <img class="img-fluid" src="./img/image.png" alt="Imagen de taxi" height="300" width="300">
           <div class="letras">
-          <h1 class="display-1">TuRemo</h1>
-          <h3 class="display-4">¿Necesitas un remis?</h3>
-          <button type="button">Ver Aquí</button>
+            <form id="formulario">
+              <h1 class="h3 mb-3 fw-normal">Inicio de Sesión</h1>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo Electrónico</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+              </div>
+          
+              <div class="form-check text-start my-3">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Recordarme
+                </label>
+              </div>
+              <button type="button" class="btn btn-secondary">Iniciar Sesión</button>
+            </form>
         </div>
         </div>
       </main>
