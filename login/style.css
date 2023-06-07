@@ -11,18 +11,31 @@ main{
 
 .letras{
     color: #202020;
-    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
     background-color: #F2F56A;
     border-radius: 5px;
     border-color: #F2F56A;
-    width: 300px;
-    font-size: 25px;
 }
-@media(max-width: 748px){
-    button{
-        width: 60%;
-    }
+
+#formulario{
+    width: 60%;
+}
+
+.form-floating{
+    margin-bottom: 2%;
+}
+
+.btn{
+    background-color:  #404040;
+    width: 40%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
 }
