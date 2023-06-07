@@ -1,0 +1,28 @@
+header{
+    background-color:  #404040;
+    padding: 18px;
+    font-size: 18px;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+main{
+    background-color:  #FFFFFF;
+}
+
+.letras{
+    color: #202020;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button{
+    background-color: #F2F56A;
+    border-radius: 5px;
+    border-color: #F2F56A;
+    width: 300px;
+    font-size: 25px;
+}
+@media(max-width: 748px){
+    button{
+        width: 60%;
+    }
+}
