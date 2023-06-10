@@ -15,7 +15,9 @@ main{
     justify-content: center;
     align-items: center;
 }
-
+a{
+    text-decoration: none;
+}
 button{
     background-color: #F2F56A;
     border-radius: 5px;
