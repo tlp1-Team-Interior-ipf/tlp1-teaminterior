@@ -6,7 +6,7 @@
   <title>tuRemo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="style.css" />
@@ -17,6 +17,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="/img/Taxi-Yellow-PNG-Photo.png">  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
 </head>
 <body class="d-flex min-vh-80 text-center text-white">
   <div class="cover-container d-flex w-100 h-100 flex-column">
@@ -34,147 +37,146 @@
       </div>
     </header>
 
-<main>
+    <main>
 
-
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Juan Rodríguez</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container" id="recuadro">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Juan Rodríguez</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Marío García</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Marío García</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Carlos López</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Carlos López</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Alejandro Pérez</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Alejandro Pérez</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Luis González</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Luis González</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Sergio Ramírez</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Sergio Ramírez</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">Lucas Martínez</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">Lucas Martínez</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="card-title">José Hernández</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="card-title">José Hernández</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
-            <div class="card-body">
-              <h5 class="">Diego Torres</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/menu/img/transparent-icon-design-5e9514e3e94e76.6287660515868285159556.jpg" alt="" height="225">
+                <div class="card-body">
+                  <h5 class="">Diego Torres</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"class="boton">View</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
-</main>
-
+    </main>
+<script src="main.js"></script>
 </body>
 </html>
