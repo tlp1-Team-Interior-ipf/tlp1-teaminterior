@@ -55,7 +55,7 @@ NuevoUsuario.addEventListener('submit', async (e) => {
 
     console.log(respToJson.message);
 
-    formNuevoUsuario.reset();
+    NuevoUsuario.reset();
 
     setTimeout(() => {
         window.location.href = '/login/loginusuario';

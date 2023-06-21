@@ -1,9 +1,7 @@
 
 const router = require('express').Router();
 
-const {
-    crearUsuario
-} = require('../controllers/usuario.controller');
+const usuarioCtrl = require('../controllers/usuario.controller');
 
 const { validarJWT } = require('../middlewares/validar_jwt');
 
@@ -18,7 +16,7 @@ router.get('/registro/usuario', (req, res) => {
     res.render('registro/signinusuario');
   });
   
-router.post('/registro/usuario', crearUsuario)
+router.post('/registro/usuario', usuarioCtrl)
 
  
 
