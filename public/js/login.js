@@ -21,11 +21,11 @@ formLogin.addEventListener('submit', async (e) => {
         return Swal.fire('Error', message, 'error');
     }
 
-    const { message, token } = await response.json();
-    Swal.fire('Correcto', message, 'success');
+    // const { message, token } = await response.json();
+    // Swal.fire('Correcto', message, 'success');
 
-    // Se almacena el token en el local storage
-    localStorage.setItem('token', token);
+    // // Se almacena el token en el local storage
+    // localStorage.setItem('token', token);
 
     // Redireccionar a la vista de tareas
     setTimeout(() => {
