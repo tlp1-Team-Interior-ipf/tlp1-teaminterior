@@ -12,11 +12,8 @@ router.get('/registro/usuario', (req, res) => res.render('registro/signinusuario
 
 
 
-router.get('/registro/usuario', (req, res) => {
-    res.render('registro/signinusuario');
-  });
   
-router.post('/registro/usuario', usuarioCtrl)
+router.post('/registro/usuario', usuarioCtrl.crearUsuario)
 
  
 
