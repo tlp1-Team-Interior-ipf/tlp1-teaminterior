@@ -3,35 +3,36 @@
   <div>
     <img class="img-fluid" src="/img/image.png" alt="Imagen de taxi" height="300" width="300">
     <div class="letras">
-      <form id="formulario" action="/login/usuario" method="post">
+      <form id="formulario" action="#">
         <h1 class="h3 mb-3 fw-normal">Registrarse</h1>
         <div class="form-floating">
-          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" autocomplete="email">
-          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          <label for="floatingInput">Correo Electrónico</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password" autocomplete="new-password">
-          <label for="contraseña">Contraseña</label>
+          <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password">
+          <label for="floatingPassword">Contraseña</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="confirmcontraseña" placeholder="Password" autocomplete="new-password">
-          <label for="confirmcontraseña">Confirmar Contraseña</label>
+          <input type="password" class="form-control" id="confirmcontraseña" name="confirmcontraseña"
+            placeholder="Password">
+          <label for="floatingPassword">Confirmar Contraseña</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" autocomplete="given-name">
-          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+          <label for="floatingInput">Nombre</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" autocomplete="family-name">
-          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+          <label for="floatingInput">Apellido</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" autocomplete="tel">
-          <label for="telefono">Teléfono</label>
+          <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+          <label for="floatingInput">Teléfono</label>
         </div>
         <div class="form-floating">
-          <input type="date" class="form-control" id="fecha_nac" name="fecha_nac" placeholder="Fecha de Nacimiento" autocomplete="bday">
-          <label for="fecha_nac">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="fecha_nac" name="fecha_nac" placeholder="Fecha de Nacimiento">
+          <label for="floatingInput">Fecha de Nacimiento</label>
         </div>
 
         <div class="form-check text-start my-3">
@@ -46,6 +47,5 @@
   </div>
 </main>
 <footer class="text-black">© Derechos Reservados Team Interior 2023, tuRemo</footer>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/js/signin.js"></script>
 <%- include('../partials/footer')  %>
