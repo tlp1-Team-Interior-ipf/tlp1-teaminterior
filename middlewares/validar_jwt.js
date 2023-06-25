@@ -42,5 +42,5 @@ try {
 }
 
 module.exports = {
-    validarJWT,
+    validarJWT
 }

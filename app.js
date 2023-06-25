@@ -56,7 +56,8 @@ empresasModel.sync()
 
 
 app.use(require('./src/routes/index.routes'))
-
+app.use(require('./src/routes/empresa.routes'))
+app.use(require('./src/routes/usuario.routes'))
 
 
 app.use((req, res, next) => {
