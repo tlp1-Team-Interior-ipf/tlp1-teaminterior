@@ -12,14 +12,9 @@ router.get('/registro/usuario', (req, res) => res.render('registro/signinusuario
 
 
 
-router.get('/registro/usuario', (req, res) => {
-    res.render('registro/signinusuario');
-  });
   
-router.post('/registro/usuario', router)
+router.post('/registro/usuario', usuarioCtrl)
 
-router.get('/usuario', (req, res) =>{
-  res.render('index);');
-});
+ 
 
 module.exports = router;
