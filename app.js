@@ -55,15 +55,9 @@ empresasModel.sync()
     .catch((error) => console.log('Error al crear la tabla "empresas"', error));
 
 
-<<<<<<< HEAD
 app.use(require('./src/routes/index.routes'))
 app.use(require('./src/routes/empresa.routes'))
 app.use(require('./src/routes/usuario.routes'))
-=======
-app.use('/',require('./src/routes/index.routes'))
-app.use('/',require('./src/routes/usuario.routes'))
-
->>>>>>> 4905223bf13983663d7d5f0e38469f2b8510c3d6
 
 
 app.use((req, res, next) => {
