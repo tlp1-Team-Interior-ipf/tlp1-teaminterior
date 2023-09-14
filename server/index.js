@@ -12,6 +12,7 @@ import { userRouter } from "./src/routes/user.routes.js";
 import { driverRouter } from "./src/routes/driver.routes.js";
 import { enterpriseRouter } from "./src/routes/enterprise.routes.js";
 import './src/models/user.js';
+import './src/models/driver_enterprise.js';
 
 
 const app = express();

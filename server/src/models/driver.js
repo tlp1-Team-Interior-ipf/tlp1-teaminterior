@@ -1,5 +1,5 @@
 import { sequelize } from '../config/db.js';
-import { DataTypes, Error } from 'sequelize';
+import { DataTypes } from 'sequelize';
 import { hashPassword } from '../helpers/hash.js';
 import bcrypt from 'bcrypt';
 
@@ -9,7 +9,7 @@ export const DriverModel = sequelize.define('Driver', {
         // Model attributes are defined here
         id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            autoIncrement: true,
             primaryKey: true
         },
         name: {
