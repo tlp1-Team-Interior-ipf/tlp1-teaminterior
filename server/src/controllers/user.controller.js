@@ -3,7 +3,7 @@ import { getAllUsers,
         createUser,
         updateUser,
         deleteUser,
-        getUserByEmailAndPassword } from "../models/user.js";
+        getUserByEmailAndPassword } from "../services/userServices.js";
 import { createJWT } from "../helpers/jsonwebtoken.js";
 
 

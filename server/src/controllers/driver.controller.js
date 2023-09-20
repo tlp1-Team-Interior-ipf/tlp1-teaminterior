@@ -3,7 +3,7 @@ import { getAllDrivers,
         getDriverByEmailAndPassword,
         createDriver,
         updateDriver,
-        deleteDriver } from "../models/driver.js";
+        deleteDriver } from "../services/driverServices.js";
 import { createJWT } from "../helpers/jsonwebtoken.js";
 
 

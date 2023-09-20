@@ -3,7 +3,7 @@ import { getAllEnterprise,
         getEnterpriseByEmailAndPassword,
         createEnterprise,
         deleteEnterprise,
-        updateEnterprise } from "../models/enterprise.js";
+        updateEnterprise } from "../services/enterpriseServices.js";
 import { createJWT } from "../helpers/jsonwebtoken.js";
 
 
